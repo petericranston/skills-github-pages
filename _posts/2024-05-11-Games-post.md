@@ -5,4 +5,4 @@ date: 2024-05-11
 
 # Pong
 
-![Image of pong running](/Images/Pong.jpg)
+<img src="/Images/Pong.png" alt="Image of pong running" width="200px">
