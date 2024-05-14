@@ -3,6 +3,6 @@ title: "Games.js"
 date: 2024-05-11
 ---
 
-# Pong
+# Pong PONG PONG
 
-<img src="SKILLS-GITHUB-PAGES/Images/Pong.png" alt="Image of pong" width="20%">
+<img src="/Images/Pong.png" alt="Image of pong" width="20%">
