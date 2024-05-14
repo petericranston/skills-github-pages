@@ -51,7 +51,7 @@ function moveBall() {//Function for moving the ball
   if (ball.x > width) {
     ball.xSpeed *= -1;
   }
-  else if (ball.x < 0) {
+  else if (ball.x < 10) {
     ball.xSpeed *= -1;
   }
 
@@ -89,11 +89,6 @@ function movePaddle() {//Function for moving the paddle
 
 function aiMove() {
   rect(AI.x, ball.y, AI.w, AI.h);
-
-  if ((ball.x >= AI.x - 5 && ball.x <= AI.x + 5) && (ball.y >= AI.y - 25 && ball.y <= AI.y + 25)) {
-    ball.xSpeed *= 1;
-  }
-
 }
 
 function collision() {

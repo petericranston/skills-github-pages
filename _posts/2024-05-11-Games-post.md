@@ -1,5 +1,5 @@
 ---
-title: "Games I created in p5.js"
+title: "Games.js"
 date: 2024-05-11
 ---
 
