@@ -1,6 +1,3 @@
-
-
-
 let wDown = false;//Variable to determine if w is down
 let sDown = false;//Variable to determine if w is down
 
