@@ -1,5 +1,5 @@
-let aDown = false;//Variable to determine if w is down
-let dDown = false;//Variable to determine if w is down
+let aDown = false;//Variable to determine if a is down
+let dDown = false;//Variable to determine if is down
 
 let ball = {
   x: 50,
@@ -85,8 +85,8 @@ function draw() {
 
   blocks = [brick1, brick2, brick3];
 
-  blocks[0].create();
-  blocks[1].create();
-  blocks[2].create();
+  for (i = 0; 0 < 4; i++) {
+    blocks[i].create();
+  }
 
 }
