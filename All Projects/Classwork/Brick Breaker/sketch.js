@@ -79,11 +79,14 @@ function draw() {
 
   movePaddle();
 
-  for (i = 0; i < 100; i++) {
-    brick1 = new Bricks(10, 10, i, 20);
-    brick1.create();
-  }
+  brick1 = new Bricks(100, 20, 10, 40);
+  brick2 = new Bricks(100, 20, 50, 70);
+  brick3 = new Bricks(100, 20, 200, 20);
 
+  blocks = [brick1, brick2, brick3];
 
+  blocks[0].create();
+  blocks[1].create();
+  blocks[2].create();
 
 }
