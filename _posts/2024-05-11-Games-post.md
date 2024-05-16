@@ -1,5 +1,5 @@
 ---
-title: "Games.js"
+title: "Games"
 date: 2024-05-11
 ---
 
