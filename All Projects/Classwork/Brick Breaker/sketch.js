@@ -92,6 +92,7 @@ function createBlocks() {
 
 function setup() {
   createCanvas(400, 400);
+  createBlocks();
 
 }
 
