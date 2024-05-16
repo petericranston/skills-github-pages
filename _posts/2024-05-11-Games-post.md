@@ -7,3 +7,4 @@ date: 2024-05-11
 
 <img src="/Images/Pong.png" alt="Image of pong" width="20%">
 
+![image](/Images/Pong.png)
