@@ -1,6 +1,8 @@
 let aDown = false;//Variable to determine if a is down
 let dDown = false;//Variable to determine if is down
 
+let increase = 0;//variable to change the location of the blocks
+
 let ball = {
   x: 50,
   y: 50,
@@ -19,19 +21,19 @@ let paddle = {
 
 
 function keyPressed() {//Function to detect when button is pressed
-  if (key === 'a') {
+  if (key === 'a' || keyCode === 65) {
     aDown = true;
   }
-  else if (key === 'd') {
+  else if (key === 'd' || keyCode === 68) {
     dDown = true;
   }
 }
 
 function keyReleased() {//Function for to keep the paddle going until released
-  if (key === 'a') {
+  if (key === 'a' || keyCode === 65) {
     aDown = false;
   }
-  else if (key === 'd') {
+  else if (key === 'd' || keyCode === 68) {
     dDown = false;
   }
 }
@@ -69,9 +71,28 @@ class Bricks {
   }
 }
 
+function createBlocks() {
+  brick1 = new Bricks(100, 20, 0, 0);
+  brick2 = new Bricks(100, 20, 100, 0);
+  brick3 = new Bricks(100, 20, 200, 0);
+  brick4 = new Bricks(100, 20, 300, 0);
+
+
+
+
+
+
+  blocks = [brick1, brick2, brick3, brick4];
+
+  for (i = 0; 0 < 4; i++) {
+    blocks[i].create();
+  }
+}
+
 
 function setup() {
   createCanvas(400, 400);
+
 }
 
 function draw() {
@@ -79,14 +100,9 @@ function draw() {
 
   movePaddle();
 
-  brick1 = new Bricks(100, 20, 10, 40);
-  brick2 = new Bricks(100, 20, 50, 70);
-  brick3 = new Bricks(100, 20, 200, 20);
 
-  blocks = [brick1, brick2, brick3];
 
-  for (i = 0; 0 < 4; i++) {
-    blocks[i].create();
-  }
+
+
 
 }
