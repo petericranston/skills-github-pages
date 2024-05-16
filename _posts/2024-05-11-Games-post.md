@@ -5,6 +5,5 @@ date: 2024-05-11
 
 # Pong
 
-<img src="/Images/Pong.png" alt="Image of pong" width="20%">
+<img src="skills-github-pages/Images/Pong.png" alt="Image of pong" width="20%">
 
-![image](/Images/Pong.png)
