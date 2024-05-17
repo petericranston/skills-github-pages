@@ -67,6 +67,7 @@ function draw() {
   background(220);
 
   movePaddle();
+  moveBall();
 
 
 
@@ -78,8 +79,6 @@ function draw() {
 
 
 }
-
-
 
 function createBlocks() {
 
@@ -94,6 +93,7 @@ function createBlocks() {
       let y = row * brickHeight;
       let brick = new Bricks(brickWidth, brickHeight, x, y);
       blocks.push(brick);
+
     }
   }
 }
@@ -122,7 +122,7 @@ function moveBall() {//Function for moving the ball
   if (ball.x > width) {
     ball.xSpeed *= -1;
   }
-  else if (ball.x < 10) {
+  else if (ball.x < 0) {
     ball.xSpeed *= -1;
   }
 
