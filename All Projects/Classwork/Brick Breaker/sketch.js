@@ -156,7 +156,7 @@ function moveBall() {//Function for moving the ball
 }
 
 
-function checkPaddleCollision() { 
+function checkPaddleCollision() {
   if (
     ball.y + ball.d / 2 >= paddle.y &&
     ball.x >= paddle.x &&
