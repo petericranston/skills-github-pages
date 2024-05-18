@@ -70,3 +70,5 @@ The final game works essentially the same as the original game. However my game 
 # Brick Breaker
 
 <img src="/skills-github-pages/Images/Brick Breaker.png" alt="Image of Brick breaker Game" width="50%">
+
+The second game that I created was Brick Breaker. 
