@@ -90,4 +90,19 @@ class Bricks {//class for storing bricks variables to be used to create them
       rect(this.x, this.y, this.w, this.h)
     }
   }
+  
+  checkCollisions(ball) {//Checking ball collision on bricks
+    if (
+      !this.hit &&
+      ball.x > this.x &&
+      ball.x < this.x + this.w &&
+      ball.y > this.y &&
+      ball.y < this.y + this.h
+    ) {
+      this.hit = true;
+      ball.ySpeed *= -1;
+    }
+
+  }
+}
 ```
