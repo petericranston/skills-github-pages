@@ -65,3 +65,8 @@ function moveBall() {//Function for moving the ball
 The final game works essentially the same as the original game. However my game is unbeatable.
 
 [Link to Game](/skills-github-pages/All%20Projects/Classwork/Pong/index.html)
+
+
+# Brick Breaker
+
+<img src="/skills-github-pages/Images/Brick Breaker.png" alt="Image of Brick breaker Game" width="50%">
