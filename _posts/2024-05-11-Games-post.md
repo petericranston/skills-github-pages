@@ -71,4 +71,23 @@ The final game works essentially the same as the original game. However my game 
 
 <img src="/skills-github-pages/Images/Brick Breaker.png" alt="Image of Brick breaker Game" width="50%">
 
-The second game that I created was Brick Breaker. It is also an old game that came out in the 1970s. I created it to give myself another challenge. The game overall works as it should. I used similar methods to the 
+The second game that I created was Brick Breaker. It is also an old game that came out in the 1970s. I created it to give myself another challenge. The game overall works as it should. I used similar methods to the pong game to create it. 
+I used variable containers to create the ball and paddle and i used many functions to create all of the processes in the game. One of the more complicated parts of the game is the class that is used to create the bricks. 
+
+```
+class Bricks {//class for storing bricks variables to be used to create them
+  constructor(w, h, x, y) {
+    this.w = w;
+    this.h = h;
+    this.x = x;
+    this.y = y;
+    this.hit = false;
+  }
+
+
+  create() {//Creating bricks
+    if (!this.hit) {
+      rect(this.x, this.y, this.w, this.h)
+    }
+  }
+```
