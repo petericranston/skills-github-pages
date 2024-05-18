@@ -2,6 +2,8 @@
 
 let firework;
 
+let runtime = 1;
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   /*for (let i = 0; i < numParticles; i++) {
@@ -17,10 +19,14 @@ function draw() {
     firework.update();
   }
   firework.update();
+
+
+
 }
 
 function mousePressed() {
   firework = new Firework(mouseX, mouseY);
+  runtime += 1;
 }
 
 class Particle {
@@ -67,8 +73,10 @@ class Firework {
       if (thingy.update())
         thingy.update();
       thingy.show();
-
     })
+
+
+
   }
 
 }
