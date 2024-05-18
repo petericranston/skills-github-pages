@@ -106,3 +106,5 @@ class Bricks {//class for storing bricks variables to be used to create them
   }
 }
 ```
+
+I used some of the similar code from my pong game to speed up the game process. For example, I used all the paddle code for movement and creation, and just changed the dimensions and position to make it move along the X axis rather than the Y and at the bottom of the canvas. I also made adjustments to the movement function for the change in key binds. 
