@@ -71,4 +71,4 @@ The final game works essentially the same as the original game. However my game 
 
 <img src="/skills-github-pages/Images/Brick Breaker.png" alt="Image of Brick breaker Game" width="50%">
 
-The second game that I created was Brick Breaker. 
+The second game that I created was Brick Breaker. It is also an old game that came out in the 1970s. I created it to give myself another challenge. The game overall works as it should. I used similar methods to the 
