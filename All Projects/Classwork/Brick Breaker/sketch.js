@@ -53,6 +53,9 @@ class Bricks {
     }
   }
 
+  checkCollisions() {
+
+  }
 }
 
 let blocks = [];
@@ -66,11 +69,11 @@ function setup() {
 function draw() {
   background(220);
 
+
+
   movePaddle();
   moveBall();
-
-
-
+  checkPaddleCollision();
 
 
   for (let i = 0; i < blocks.length; i++) {
@@ -138,4 +141,16 @@ function moveBall() {//Function for moving the ball
   ball.y += ball.ySpeed;//Changing ball speed
 
   circle(ball.x, ball.y, ball.d)//Creating ball
+}
+
+
+function checkPaddleCollision() {
+  if (
+    ball.y + ball.d / 2 >= paddle.y &&
+    ball.x >= paddle.x &&
+    ball.x <= paddle.x + paddle.w
+  ) {
+    ball.ySpeed *= -1; // Reverse the ball's y direction if it hits the paddle
+    ball.y = paddle.y - ball.d / 2; // Position the ball above the paddle to avoid sticking
+  }
 }

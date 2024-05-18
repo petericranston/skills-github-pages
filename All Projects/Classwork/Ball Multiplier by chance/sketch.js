@@ -6,6 +6,8 @@ class ball {
     this.y = y;
 
   }
+
+  
 }
 
 
