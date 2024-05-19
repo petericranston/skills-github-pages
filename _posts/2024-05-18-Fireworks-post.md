@@ -51,3 +51,5 @@ class Firework {
 
 }
 ```
+The program would push a new particle to the 'p' array in the Firework class * the numParticles variable, and then use the update and show functions in the Particle class to give the particle physics and create the particles. This would occur for every particle inside the 'p' array.
+
