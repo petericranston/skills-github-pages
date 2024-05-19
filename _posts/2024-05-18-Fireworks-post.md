@@ -14,3 +14,43 @@ However, the core program is interesting in itself so I will display that.
 [Link to Game](/skills-github-pages/All%20Projects/Classwork/Fireworks/index.html)
 
 The program uses a class for the Firework creation itself, and the individual particles. It uses some math within the firework class to simulate physics and the particles falling down the screen in a similar way to how they would with gravity. These variables are also customizable to make them as realistic or as random as you want. 
+
+Bellow is just the constructor of the particle class, and the whole firework class.
+
+```
+class Particle {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+    this.a = random(TWO_PI);
+    this.speed = random(1, 3);
+    this.fall = 0;
+    this.gravity = 0.05;
+    this.moveX = cos(this.a) * this.speed;
+    this.moveY = sin(this.a) * this.speed;
+  }
+```
+```
+class Firework {
+  constructor() {
+    this.p = [];
+    this.numParticles = 200;
+
+    for (let i = 0; i < this.numParticles; i++) {
+      this.p.push(new Particle(mouseX, mouseY));
+    }
+  }
+
+  update() {
+    this.p.forEach(function (thingy) {
+      if (thingy.update())
+        thingy.update();
+      thingy.show();
+    })
+
+
+
+  }
+
+}
+```

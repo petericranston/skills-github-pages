@@ -4,9 +4,14 @@ class ball {
   constructor(x, y) {
     this.x = x;
     this.y = y;
-
+    this.a = random(TWO_PI);
+    this.speed = 3;
   }
 
+
+  update() {
+
+  }
 
 }
 
