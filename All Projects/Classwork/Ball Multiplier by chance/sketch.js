@@ -1,11 +1,13 @@
 let balls = [];
 
-class ball {
+class Ball {
   constructor(x, y) {
     this.x = x;
     this.y = y;
     this.a = random(TWO_PI);
     this.speed = 3;
+
+
   }
 
 
@@ -28,8 +30,6 @@ function draw() {
 }
 
 function createBall() {
-
-  circle(200, 200, 30)
+  let ball = new Ball();
 }
-
 
