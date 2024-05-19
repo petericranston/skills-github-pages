@@ -10,3 +10,5 @@ In class, we created a fireworks program, that when you click down on your mouse
 However, the core program is interesting in itself so I will display that.
 
 <img src="/skills-github-pages/Images/Firework.png" alt="Image of Fireworks" width="50%">
+
+[Link to Game](/skills-github-pages/All%20Projects/Classwork/Fireworks/index.html)
