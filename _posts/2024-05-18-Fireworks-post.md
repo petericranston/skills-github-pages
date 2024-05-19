@@ -47,9 +47,6 @@ class Firework {
         thingy.update();
       thingy.show();
     })
-
-
-
   }
 
 }
