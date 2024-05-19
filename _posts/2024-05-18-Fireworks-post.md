@@ -15,7 +15,7 @@ However, the core program is interesting in itself so I will display that.
 
 The program uses a class for the Firework creation itself, and the individual particles. It uses some math within the firework class to simulate physics and the particles falling down the screen in a similar way to how they would with gravity. These variables are also customizable to make them as realistic or as random as you want. 
 
-Bellow is just the constructor of the particle class, and the whole firework class.
+Below is just the constructor of the particle class, and the whole firework class.
 
 ```
 class Particle {
