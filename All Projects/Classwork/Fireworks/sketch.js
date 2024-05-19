@@ -19,8 +19,6 @@ function draw() {
   }
   firework.update();
 
-
-
 }
 
 function mousePressed() {
