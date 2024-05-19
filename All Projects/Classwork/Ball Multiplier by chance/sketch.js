@@ -6,6 +6,7 @@ class Ball {
     this.y = y;
     this.a = random(TWO_PI);
     this.speed = 3;
+    this.r = 25;
 
     this.moveX = cos(this.a) * this.speed;
     this.moveY = sin(this.a) * this.speed;
@@ -21,11 +22,19 @@ class Ball {
     this.fall += this.gravity;
   }
 
+  collisionWall() {
+
+  }
+
+  collisionBall(other) {
+    let d = dist(this.x, this.y, other.x, other.y)
+    return d < this.r + other.r;
+  }
 
   show() {
     fill(255, 0, 0);
     noStroke()
-    circle(this.x, this.y, 25)
+    circle(this.x, this.y, this.d)
   }
 }
 
