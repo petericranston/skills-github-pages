@@ -2,7 +2,6 @@
 
 let firework;
 
-let runtime = 1;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -26,7 +25,6 @@ function draw() {
 
 function mousePressed() {
   firework = new Firework(mouseX, mouseY);
-  runtime += 1;
 }
 
 class Particle {
@@ -39,7 +37,6 @@ class Particle {
     this.gravity = 0.05;
     this.moveX = cos(this.a) * this.speed;
     this.moveY = sin(this.a) * this.speed;
-
   }
 
   update() {
