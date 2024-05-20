@@ -6,7 +6,7 @@ class Ball {
     this.y = y;
     this.a = random(TWO_PI);
     this.speed = 3;
-    this.r = 25;
+    this.r = 12;
 
     this.moveX = cos(this.a) * this.speed;
     this.moveY = sin(this.a) * this.speed;
@@ -48,17 +48,35 @@ class Ball {
         MultiBalls[MultiBalls.length] = new Ball(200, 200)
       }
       else if (chance < 25) {
-
+        MultiBalls.splice(0, 1)
       }
-
     }
+  }
+
+  collisionBall(other) {
+    let d = dist(this.x, this.y, other.x, other.y)
+    if (d < this.r) {
+      this.moveX *= -1;
+      this.moveY *= -1;
+
+      let chance = random(100);
+
+      if (chance > 75) {
+        MultiBalls[MultiBalls.length] = new Ball(200, 200)
+      }
+      else if (chance < 25) {
+        MultiBalls.splice(0, 1)
+      }
+    }
+
+
+
 
   }
 
   show() {
     fill(255, 0, 0);
-    noStroke()
-    circle(this.x, this.y, this.r)
+    circle(this.x, this.y, this.r * 2)
   }
 }
 
@@ -76,7 +94,12 @@ function draw() {
     MultiBalls[i].show();
     MultiBalls[i].move();
     MultiBalls[i].collisionWall();
+
+    for (let j = i + 1; j < MultiBalls.length; j++) {
+      MultiBalls[i].collisionBall(MultiBalls[j])
+    }
   }
+
 
 
 }
