@@ -29,7 +29,7 @@ let chance = random(100);
 ```
 The more complicated part of the program however was the collision between balls. I got it mostly working. The program can determine whether two balls are colliding, however I wasn't sure how the balls bouncing off each other in a way that would obey the physics I had created. So at its current state the balls just jitter a bit when they are colliding and sometimes bounce off each other in a somewhat realistic way. I could add the balls colliding giving a chance that a new ball would spawn, which I did.
 
- Also, I attempted to make the balls spawn from the one that had bounces off a wall or ball, and it did work, but the new ball would not have any momentum and would sadly bounce at the bottom of the screen so I decided to make them spawn in the middle of the page in a random direction. 
+ Also, I attempted to make the balls spawn from the one that had bounces off a wall or ball, and it did work, but the new ball would not have any momentum and would sadly bounce at the bottom of the screen so I decided to make them spawn in the middle of the page in a random direction. I also made it impossible to lose all the balls by just splicing the second ball in the array rather than the first so there will always be at least one. Otherwise the balls would often all disappear which is boring. 
 
  I found the adding to the array to create a new ball and the collision between the balls themselves the most complicated aspects of this project. 
 
