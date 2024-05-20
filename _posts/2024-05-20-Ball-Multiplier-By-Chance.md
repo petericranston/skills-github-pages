@@ -137,7 +137,6 @@ class Ball {
   }
 }
 
-
 function setup() {
   createCanvas(400, 400);
   MultiBalls[0] = new Ball(200, 200);
