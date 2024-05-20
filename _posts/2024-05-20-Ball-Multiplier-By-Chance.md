@@ -10,7 +10,7 @@ date: 2024-05-20
 [Link to Game](/skills-github-pages/All%20Projects/Classwork/Ball%20Multiplier%20by%20chance/index.html)
 
 
-I created this program from an instagram add I saw a few days ago in which a bunch of balls were colliding with each other and the walls and they had a 25% chance of either creating a new ball or deleting one. I thought it was interesting and wouldn't be too challenging of a project, and many painful hours later, here we are. The program as a whole works well and as I had hoped, however there are a few bugs. 
+I created this program because of an instagram add I saw a few days ago in which a bunch of balls were colliding with each other and the walls and they had a 25% chance of either creating a new ball or deleting one. I thought it was interesting and wouldn't be too challenging of a project, and many painful hours later, here we are. The program as a whole works well and as I had hoped, however there are a few problems. 
 
 I started by creating a class for the balls and an array to store them in. And then some functions to make them do various things. I used the gravity physics that we created in class for the fireworks to give the ball realistic physics, however I then had to figure out how to make the ball bounce. It wasn't as easy as reversing the moveX and moveY variables, because that made them act very strangely, I also tried to reverse the gravity but that made them gain speed bouncing up and down until they weren't visible. 
 After some research, I determined the best way to make it work was using a dampener variable, that would decrease the amount of bounce the balls had so that they didn't go haywire. And `this.y = height - this.r;` which would correct the position of the ball as it hits the floor. 
