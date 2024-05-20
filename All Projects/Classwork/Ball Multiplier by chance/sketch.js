@@ -84,7 +84,6 @@ function setup() {
 function draw() {
   background(220);
 
-
   for (let i = 0; i < MultiBalls.length; i++) {
     MultiBalls[i].show();
     MultiBalls[i].move();
@@ -94,7 +93,6 @@ function draw() {
       MultiBalls[i].collisionBall(MultiBalls[j])
     }
   }
-
 
 
 }
