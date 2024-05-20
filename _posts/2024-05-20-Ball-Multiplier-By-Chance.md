@@ -23,8 +23,15 @@ let chance = random(100);
       if (chance > 75) {
         MultiBalls[MultiBalls.length] = new Ball(200, 200)
       }
-      else if (chance < 25) {
-        MultiBalls.splice(0, 1)
+      if (MultiBalls.length > 1) {
+        if (chance < 25) {
+          this.removed = true;
+          for (let i = MultiBalls.length - 1; i >= 0; i--) {
+            if (MultiBalls[i].removed) {
+              MultiBalls.splice(i, 1)
+            }
+          }
+        }
       }
 ```
 The more complicated part of the program however was the collision between balls. I got it mostly working. The program can determine whether two balls are colliding, however I wasn't sure how the balls bouncing off each other in a way that would obey the physics I had created. So at its current state the balls just go through one another when the program knows they are colliding. I could add the balls colliding giving a chance that a new ball would spawn, which I did.
@@ -45,6 +52,7 @@ class Ball {
     this.a = random(TWO_PI);
     this.speed = 3;
     this.r = 12;
+    this.removed = false;
 
     this.moveX = cos(this.a) * this.speed;
     this.moveY = sin(this.a) * this.speed;
@@ -70,9 +78,17 @@ class Ball {
       if (chance > 75) {
         MultiBalls[MultiBalls.length] = new Ball(200, 200)
       }
-      else if (chance < 25) {
-        MultiBalls.splice(0, 1)
+      if (MultiBalls.length > 1) {
+        if (chance < 25) {
+          this.removed = true;
+          for (let i = MultiBalls.length - 1; i >= 0; i--) {
+            if (MultiBalls[i].removed) {
+              MultiBalls.splice(i, 1)
+            }
+          }
+        }
       }
+
     }
     if (this.y - this.r < 0 || this.y + this.r > height) {
       this.moveY *= -1;
@@ -85,8 +101,16 @@ class Ball {
       if (chance > 75) {
         MultiBalls[MultiBalls.length] = new Ball(200, 200)
       }
-      else if (chance < 25) {
-        MultiBalls.splice(0, 1)
+
+      if (MultiBalls.length > 1) {
+        if (chance < 25) {
+          this.removed = true;
+          for (let i = MultiBalls.length - 1; i >= 0; i--) {
+            if (MultiBalls[i].removed) {
+              MultiBalls.splice(i, 1)
+            }
+          }
+        }
       }
     }
   }
@@ -94,8 +118,6 @@ class Ball {
   collisionBall(other) {
     let d = dist(this.x, this.y, other.x, other.y)
     if (d < this.r) {
-      this.moveX *= -1;
-      this.moveY *= -1;
 
       let chance = random(100);
 
@@ -103,7 +125,7 @@ class Ball {
         MultiBalls[MultiBalls.length] = new Ball(200, 200)
       }
       else if (chance < 25) {
-        MultiBalls.splice(0, 1)
+        MultiBalls.splice(1, 1)
       }
     }
 
@@ -124,7 +146,6 @@ function setup() {
 function draw() {
   background(220);
 
-
   for (let i = 0; i < MultiBalls.length; i++) {
     MultiBalls[i].show();
     MultiBalls[i].move();
@@ -135,7 +156,9 @@ function draw() {
     }
   }
 
+
 }
+
 
 ```
 

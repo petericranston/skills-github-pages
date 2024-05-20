@@ -7,6 +7,7 @@ class Ball {
     this.a = random(TWO_PI);
     this.speed = 3;
     this.r = 12;
+    this.removed = false;
 
     this.moveX = cos(this.a) * this.speed;
     this.moveY = sin(this.a) * this.speed;
@@ -32,9 +33,17 @@ class Ball {
       if (chance > 75) {
         MultiBalls[MultiBalls.length] = new Ball(200, 200)
       }
-      else if (chance < 25) {
-        MultiBalls.splice(1, 1)
+      if (MultiBalls.length > 1) {
+        if (chance < 25) {
+          this.removed = true;
+          for (let i = MultiBalls.length - 1; i >= 0; i--) {
+            if (MultiBalls[i].removed) {
+              MultiBalls.splice(i, 1)
+            }
+          }
+        }
       }
+
     }
     if (this.y - this.r < 0 || this.y + this.r > height) {
       this.moveY *= -1;
@@ -47,8 +56,16 @@ class Ball {
       if (chance > 75) {
         MultiBalls[MultiBalls.length] = new Ball(200, 200)
       }
-      else if (chance < 25) {
-        MultiBalls.splice(1, 1)
+
+      if (MultiBalls.length > 1) {
+        if (chance < 25) {
+          this.removed = true;
+          for (let i = MultiBalls.length - 1; i >= 0; i--) {
+            if (MultiBalls[i].removed) {
+              MultiBalls.splice(i, 1)
+            }
+          }
+        }
       }
     }
   }
