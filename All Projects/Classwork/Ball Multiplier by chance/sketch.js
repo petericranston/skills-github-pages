@@ -11,30 +11,54 @@ class Ball {
     this.moveX = cos(this.a) * this.speed;
     this.moveY = sin(this.a) * this.speed;
 
-    this.fall = 1;
     this.gravity = 0.1;
+    this.damping = 1;
   }
 
   move() {
+    this.moveY += this.gravity;
     this.x += this.moveX;
     this.y += this.moveY;
-    this.y += this.fall;
-    this.fall += this.gravity;
+
   }
 
   collisionWall() {
+    if (this.x - this.r < 0 || this.x + this.r > width) {
+      this.moveX *= -1;
+      this.x = this.x - this.r < 0 ? this.r : width - this.r;
 
-  }
+      let chance = random(100);
 
-  collisionBall(other) {
-    let d = dist(this.x, this.y, other.x, other.y)
-    return d < this.r + other.r;
+      if (chance > 75) {
+        MultiBalls[MultiBalls.length] = new Ball(200, 200)
+      }
+      else if (chance < 25) {
+        MultiBalls.splice(0, 1)
+      }
+    }
+    if (this.y - this.r < 0 || this.y + this.r > height) {
+      this.moveY *= -1;
+      this.moveY *= this.damping;
+      this.y = height - this.r;
+
+
+      let chance = random(100);
+
+      if (chance > 75) {
+        MultiBalls[MultiBalls.length] = new Ball(200, 200)
+      }
+      else if (chance < 25) {
+
+      }
+
+    }
+
   }
 
   show() {
     fill(255, 0, 0);
     noStroke()
-    circle(this.x, this.y, this.d)
+    circle(this.x, this.y, this.r)
   }
 }
 
@@ -42,18 +66,18 @@ class Ball {
 function setup() {
   createCanvas(400, 400);
   MultiBalls[0] = new Ball(200, 200);
-
 }
 
 function draw() {
   background(220);
 
 
+  for (let i = 0; i < MultiBalls.length; i++) {
+    MultiBalls[i].show();
+    MultiBalls[i].move();
+    MultiBalls[i].collisionWall();
+  }
 
-  MultiBalls[0].show();
-  MultiBalls[0].move();
 
 }
-
-
 
