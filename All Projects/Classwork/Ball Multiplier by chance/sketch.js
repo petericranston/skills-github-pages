@@ -56,8 +56,6 @@ class Ball {
   collisionBall(other) {
     let d = dist(this.x, this.y, other.x, other.y)
     if (d < this.r) {
-      this.moveX *= -1;
-      this.moveY *= -1;
 
       let chance = random(100);
 
