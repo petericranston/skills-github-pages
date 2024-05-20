@@ -31,8 +31,8 @@ The more complicated part of the program however was the collision between balls
 
  Also, I attempted to make the balls spawn from the one that had bounces off a wall or ball, and it did work, but the new ball would not have any momentum and would sadly bounce at the bottom of the screen so I decided to make them spawn in the middle of the page in a random direction. 
 
- I found the adding to the array to create a new ball and the collision between the balls themselves the most complicated aspects of this project.
- 
+ I found the adding to the array to create a new ball and the collision between the balls themselves the most complicated aspects of this project. 
+
 Heres all the code:
 
 ```

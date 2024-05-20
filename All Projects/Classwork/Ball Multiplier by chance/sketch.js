@@ -33,7 +33,7 @@ class Ball {
         MultiBalls[MultiBalls.length] = new Ball(200, 200)
       }
       else if (chance < 25) {
-        MultiBalls.splice(0, 1)
+        MultiBalls.splice(1, 1)
       }
     }
     if (this.y - this.r < 0 || this.y + this.r > height) {
@@ -48,7 +48,7 @@ class Ball {
         MultiBalls[MultiBalls.length] = new Ball(200, 200)
       }
       else if (chance < 25) {
-        MultiBalls.splice(0, 1)
+        MultiBalls.splice(1, 1)
       }
     }
   }
@@ -65,7 +65,7 @@ class Ball {
         MultiBalls[MultiBalls.length] = new Ball(200, 200)
       }
       else if (chance < 25) {
-        MultiBalls.splice(0, 1)
+        MultiBalls.splice(1, 1)
       }
     }
 
