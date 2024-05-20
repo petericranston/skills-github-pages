@@ -19,13 +19,13 @@ function draw() {
   box(150);
   pop();
 
-  /*
-    fill(255, 135, 0)
-    push();
-    translate(0, 0, 200)
-    rotateY(frameCount * 0.01)
-    ellipse(0, 0, 100)
-    pop()
-  */
+
+  // fill(255, 135, 0)
+  // push();
+  // translate(0, 0, 200)
+  // rotateY(frameCount * 0.01)
+  // ellipse(0, 0, 100)
+  // pop()
+
 
 }
