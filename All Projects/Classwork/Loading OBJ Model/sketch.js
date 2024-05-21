@@ -18,7 +18,7 @@ function draw() {
   rotateX(angle);
   rotateY(angle * 1.4);
   rotateZ(angle * 0.7);
-  O
+
   scale(50)
   // box(100);
   model(dog)
