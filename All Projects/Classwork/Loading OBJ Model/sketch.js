@@ -2,7 +2,7 @@ let angle = 1;
 let dog;
 
 function preload() {
-  dog = loadModel('dog.obj');
+  dog = loadModel('FancyDog.obj');
 }
 
 
@@ -18,7 +18,8 @@ function draw() {
   rotateX(angle);
   rotateY(angle * 1.4);
   rotateZ(angle * 0.7);
-
+O
+  scale(50)
   // box(100);
   model(dog)
   angle += 0.03;
