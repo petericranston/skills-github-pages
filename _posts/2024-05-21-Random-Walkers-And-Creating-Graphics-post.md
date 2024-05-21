@@ -48,7 +48,7 @@ This all works as it should and i'm happy with the result.
 
 # Created Graphics
 
-I used the createGraphics function so that I can draw on the page using an ellipse that leaves a trail, while the random walker square doesn't leave a trail. THe createGraphics function does exactly this. So the square and the ellipse, while both visible aren't really working on the same canvas. I created a variable `let extraCanvas;` and then set that to act as the second canvas. 
+I used the createGraphics function so that I can draw on the page using an ellipse that leaves a trail, while the random walker square doesn't leave a trail. The createGraphics function does exactly this. So the square and the ellipse, while both visible aren't really working on the same canvas. I created a variable `let extraCanvas;` and then set that to act as the second canvas. 
 
 ```
 createCanvas(400, 400);
