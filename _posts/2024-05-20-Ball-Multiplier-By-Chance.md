@@ -5,7 +5,7 @@ date: 2024-05-20
 
 ## Ball Multiplier by chance
 
-<img src="/skills-github-pages/Images/BallMultiplier.png" alt="Image o" width="50%">
+<img src="/skills-github-pages/Images/BallMultiplier.png" alt="Image of Ball Multiplier Program Working" width="50%">
 
 [Link to Game](/skills-github-pages/All%20Projects/Classwork/Ball%20Multiplier%20by%20chance/index.html)
 
