@@ -13,7 +13,7 @@ function draw() {
   rotateY(angle * 0.3);
   rotateZ(angle * 1.4);
 
-  translate(mouseX, mouseY);
+  translate(mouseX - width / 2, mouseY - height / 2);
   box(10, 100, 50)
 
   angle += 0.07;
