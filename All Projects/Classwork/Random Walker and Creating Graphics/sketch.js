@@ -24,8 +24,7 @@ function draw() {
   //no trails
   background(200);
 
-  walker.step();
-  walker.display();
+
 
 
   if (mouseIsPressed) {
@@ -37,7 +36,8 @@ function draw() {
 
   image(extraCanvas, 0, 0)
 
-
+  walker.step();
+  walker.display();
 
 }
 
