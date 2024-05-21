@@ -7,7 +7,7 @@ function draw() {
   background(220);
 
 
-
+  rectMode(CENTER);
 
   normalMaterial();
   push();
