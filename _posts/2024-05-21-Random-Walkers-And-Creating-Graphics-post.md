@@ -5,7 +5,7 @@ date: 2024-05-21
 
 ## Random Walkers and Creating Graphics
 
-[Run program here](/skills-github-pages//All%20Projects/Classwork/Random%20Walker%20and%20Creating%20Graphics/index.html)
+[Run program here](/skills-github-pages/All%20Projects/Classwork/Random%20Walker%20and%20Creating%20Graphics/index.html)
 
 <img src="/skills-github-pages/Images/Creating Graphics and Random Walker image.png" alt="Image of the random walker and creating graphics program running" width="50%">
 
