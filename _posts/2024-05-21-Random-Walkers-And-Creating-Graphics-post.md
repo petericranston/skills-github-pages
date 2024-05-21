@@ -7,7 +7,7 @@ date: 2024-05-21
 
 [Run program here](/skills-github-pages//All%20Projects/Classwork/Random%20Walker%20and%20Creating%20Graphics/index.html)
 
-<img src="" alt="Image of the random walker and creating graphics program running" width="50%">
+<img src="/skills-github-pages/Images/Creating Graphics and Random Walker image.png" alt="Image of the random walker and creating graphics program running" width="50%">
 
 This program does two things at the same time. It uses a random walker to create a square that randomly moves around the screen, without leaving a trail, as well as making it so that the user can draw whatever they want on the screen as if they are drawing a line, which does leave a trail. 
 
