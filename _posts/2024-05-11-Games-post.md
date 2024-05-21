@@ -3,7 +3,7 @@ title: "Games"
 date: 2024-05-11
 ---
 
-# Pong
+## Pong
 
 <img src="/skills-github-pages/Images/Pong.png" alt="Image o" width="50%">
 
@@ -67,7 +67,7 @@ The final game works essentially the same as the original game. However my game 
 [Link to Game](/skills-github-pages/All%20Projects/Classwork/Pong/index.html)
 
 
-# Brick Breaker
+## Brick Breaker
 
 <img src="/skills-github-pages/Images/Brick Breaker.png" alt="Image of Brick breaker Game" width="50%">
 

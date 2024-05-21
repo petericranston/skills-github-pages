@@ -3,7 +3,7 @@ title: "Ball Multiplier By Chance"
 date: 2024-05-20
 ---
 
-# Ball Multiplier by chance
+## Ball Multiplier by chance
 
 <img src="/skills-github-pages/Images/BallMultiplier.png" alt="Image o" width="50%">
 
