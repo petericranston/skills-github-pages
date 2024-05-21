@@ -1,6 +1,6 @@
 let walker;
 
-let extraCanvas;
+let extrasCanvas;
 
 function setup() {
   createCanvas(400, 400);
