@@ -5,6 +5,10 @@ date: 2024-05-21
 
 ## Random Walkers and Creating Graphics
 
+[Run program here](/skills-github-pages//All%20Projects/Classwork/Random%20Walker%20and%20Creating%20Graphics/index.html)
+
+<img src="" alt="Image of the random walker and creating graphics program running" width="50%">
+
 This program does two things at the same time. It uses a random walker to create a square that randomly moves around the screen, without leaving a trail, as well as making it so that the user can draw whatever they want on the screen as if they are drawing a line, which does leave a trail. 
 
 # Random Walker
@@ -61,4 +65,6 @@ if (mouseIsPressed) {
   }
   image(extraCanvas, 0, 0)
 ```
+The background colour for the extra canvas was not in the draw function, and therefore a trail would be created.
 
+I also added a function where you can reset the second canvas when you press the space bar, just for ease of use for the user.
