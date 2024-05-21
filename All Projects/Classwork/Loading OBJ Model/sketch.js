@@ -2,7 +2,7 @@ let angle = 1;
 let dog;
 
 function preload() {
-  dog = loadModel('Dog.obj');
+  dog = loadModel('dog.obj');
 }
 
 
