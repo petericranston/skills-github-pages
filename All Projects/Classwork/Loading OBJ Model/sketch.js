@@ -7,11 +7,11 @@ function preload() {
 
 
 function setup() {
-  createCanvas(400, 400, WEBGL);
+  createCanvas(600, 600, WEBGL);
 }
 
 function draw() {
-  background(0);
+  background(200);
 
   ambientLight(100);
   directionalLight(255, 255, 255, 0, 0, -1);
