@@ -10,6 +10,12 @@ function setup() {
   background(0);
 }
 
+function keyPressed() {
+  if (key == " ") {
+    extraCanvas.clear();
+  }
+}
+
 function draw() {
 
 
@@ -17,20 +23,21 @@ function draw() {
   background(0);
   x += random(-5, 5);
   y += random(-5, 5);
-  fill(255, 0, 0);
+  fill(255, 250, 0);
 
 
   if (mouseIsPressed) {
-    fill(255, 150, 100);
+    extraCanvas.fill(255, 150, 100);
     extraCanvas.noStroke();
     extraCanvas.ellipse(mouseX, mouseY, 60, 60);
   }
+
 
   image(extraCanvas, 0, 0)
 
   stroke(255);
   rectMode(CENTER);
-  rect(x, y, 20, 20);
+  rect(x, y, 25, 25);
 
 
 }
