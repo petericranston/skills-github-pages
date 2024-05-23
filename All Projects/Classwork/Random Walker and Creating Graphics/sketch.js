@@ -58,16 +58,16 @@ class Walker {
 
     switch (choice) {
       case 0:
-        this.x = this.x + 1;
+        this.x = this.x + 2;
         break;
       case 1:
-        this.x = this.x - 1;
+        this.x = this.x - 2;
         break;
       case 2:
-        this.y = this.y + 1;
+        this.y = this.y + 2;
         break;
       case 3:
-        this.y = this.y - 1;
+        this.y = this.y - 2;
         break;
     }
 
